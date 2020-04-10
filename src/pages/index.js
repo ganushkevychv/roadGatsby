@@ -9,6 +9,7 @@ import StickyFooter from "../components/footer"
 
 const IndexPage = () => (
   <Layout>
+    <SEO title="Home page" />
     <div className="container-card">
     <Card variant="outlined" 
     style={{
@@ -43,21 +44,21 @@ const IndexPage = () => (
       }} >
   <Button style={{
     border:"3px solid grey",
-  }}><Link to="/page-2/"  
+  }}><Link to="/tech/"  
   style={{
     textDecoration:"none",
     color:"black"
     }}>О нас</Link></Button>
   <Button style={{
     border:"3px solid grey",
-  }} ><Link to="/page-2/"  
+  }} ><Link to="/tech/"  
   style={{
     textDecoration:"none",
     color:"black"
-    }}>Информация</Link></Button>
+    }}>Техника</Link></Button>
   <Button style={{
     border:"3px solid grey",
-  }}><Link to="/page-2/"  
+  }}><Link to="/tech/"  
   style={{
     textDecoration:"none",
     color:"black"
