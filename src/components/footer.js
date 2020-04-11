@@ -9,7 +9,7 @@ function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary">
       {'Copyright © '}
-      <Link color="inherit" href="vladyslav-ganushkevych.netlify.com">
+      <Link color="inherit" href="https:\\vladyslav-ganushkevych.netlify.com">
         VG
       </Link>{' '}
       {new Date().getFullYear()}
