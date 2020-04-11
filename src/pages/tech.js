@@ -2,24 +2,25 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Card, CardDeck, CardGroup } from 'react-bootstrap';
+import { Card, CardDeck } from 'react-bootstrap';
 import { Button } from '@material-ui/core';
 import loader from "../images/loader.jpg"
 import bulldozer from "../images/bulldozer.jpg"
-import excavator from "../images/excavator.jpg"
+import excavator from "../images/excavator.png"
 import maz from "../images/maz.jpg"
-import mini from "../images/mini.jpg"
+import mini from "../images/mini.png"
 import reno from "../images/reno.jpg"
 import trailer from "../images/trailer.jpg"
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/tech.scss"
-const SecondPage = () => (
+const Tech = () => (
   
   <Layout>
     <SEO title="Page two" />
     <h1 className="header">Наша техника</h1>
+    <div className="cards">
     <CardDeck>
   <Card style={{ width: '18rem' }} >
     <Card.Img variant="top" src={loader} style={{width:"100%"}} />
@@ -30,37 +31,133 @@ const SecondPage = () => (
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
+    <Button style={{
+    backgroundColor:"#90caf9"
+  }}><Link to="/contact/"  
+  style={{
+    textDecoration:"none",
+    color:""
+    }}>Заказать</Link></Button>
     </Card.Footer>
   </Card>
   <Card style={{ width: '18rem' }}>
     <Card.Img variant="top" src={bulldozer} style={{width:"100%"}} />
     <Card.Body>
-      <Card.Title>Card title</Card.Title>
+      <Card.Title>Бульдозер</Card.Title>
       <Card.Text>
-        This card has supporting text below as a natural lead-in to additional
-        content.{' '}
+      ДТ-75
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
+    <Button style={{
+    backgroundColor:"#90caf9"
+  }}><Link to="/contact/"  
+  style={{
+    textDecoration:"none",
+    color:""
+    }}>Заказать</Link></Button>
     </Card.Footer>
   </Card>
   <Card style={{ width: '18rem' }}>
     <Card.Img variant="top" src={excavator} style={{width:"100%"}} />
     <Card.Body>
-      <Card.Title>Card title</Card.Title>
+      <Card.Title>Экскаватор</Card.Title>
       <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This card has even longer content than the first to
-        show that equal height action.
+      HANIX SB 30, с тремя ковшами
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
+    <Button style={{
+    backgroundColor:"#90caf9"
+  }}><Link to="/contact/"  
+  style={{
+    textDecoration:"none",
+    color:""
+    }}>Заказать</Link></Button>
     </Card.Footer>
   </Card>
 </CardDeck>
+</div>
+<div className="cards-one">
+<CardDeck>
+<Card style={{ width: '18rem' }} >
+    <Card.Img variant="top" src={maz} style={{width:"100%"}} />
+    <Card.Body>
+      <Card.Title>Грузовой автотранспорт</Card.Title>
+      <Card.Text>
+      МАЗ-555 с прицепом
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+    <Button style={{
+    backgroundColor:"#90caf9"
+  }}><Link to="/contact/"  
+  style={{
+    textDecoration:"none",
+    color:""
+    }}>Заказать</Link></Button>
+    </Card.Footer>
+  </Card>
+  <Card style={{ width: '18rem' }} >
+    <Card.Img variant="top" src={mini} style={{width:"100%"}} />
+    <Card.Body>
+      <Card.Title>Минигудронатор</Card.Title>
+      <Card.Text>
+      TICAB БР-500
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+    <Button style={{
+    backgroundColor:"#90caf9"
+  }}><Link to="/contact/"  
+  style={{
+    textDecoration:"none",
+    color:""
+    }}>Заказать</Link></Button>
+    </Card.Footer>
+  </Card>
+  <Card style={{ width: '18rem' }} >
+    <Card.Img variant="top" src={reno} style={{width:"100%"}} />
+    <Card.Body>
+      <Card.Title>Легковой автотранспорт</Card.Title>
+      <Card.Text>
+      RENO TRAFFIC с прицепом
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+    <Button style={{
+    backgroundColor:"#90caf9"
+  }}><Link to="/contact/"  
+  style={{
+    textDecoration:"none",
+    color:""
+    }}>Заказать</Link></Button>
+    </Card.Footer>
+  </Card>
+  </CardDeck>
+  </div>
+  <div className="cards-three">
+  <CardDeck>
+  <Card style={{ width: '18rem' }} >
+    <Card.Img variant="top" src={trailer} style={{width:"100%"}} />
+    <Card.Body>
+      <Card.Title>Прицеп</Card.Title>
+      <Card.Text>
+      
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+    <Button style={{
+    backgroundColor:"#90caf9"
+  }}><Link to="/contact/"  
+  style={{
+    textDecoration:"none",
+    color:""
+    }}>Заказать</Link></Button>
+    </Card.Footer>
+  </Card>
+</CardDeck>
+</div>
 <Button style={{
     border:"3px solid grey",
   }}><Link to="/"  
@@ -68,7 +165,8 @@ const SecondPage = () => (
     textDecoration:"none",
     color:"white"
     }}>Назад</Link></Button>
+    
   </Layout>
 )
 
-export default SecondPage
+export default Tech

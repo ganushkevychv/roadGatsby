@@ -44,7 +44,7 @@ const IndexPage = () => (
       }} >
   <Button style={{
     border:"3px solid grey",
-  }}><Link to="/tech/"  
+  }}><Link to="/about/"  
   style={{
     textDecoration:"none",
     color:"black"
@@ -58,7 +58,7 @@ const IndexPage = () => (
     }}>Техника</Link></Button>
   <Button style={{
     border:"3px solid grey",
-  }}><Link to="/tech/"  
+  }}><Link to="/contact/"  
   style={{
     textDecoration:"none",
     color:"black"
