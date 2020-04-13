@@ -6,10 +6,20 @@ import Layout from "../components/layout"
 import "../styles/layout.scss"
 import SEO from "../components/seo"
 import StickyFooter from "../components/footer"
+import Image from 'react-bootstrap/Image'
+import {Col, Container, Row} from 'react-bootstrap'
+import logoRoad from "../images/logoRoad.png"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home page" />
+    <Container style={{alignItems:"center"}}>
+  <Row style={{justifyContent:"center"}}>
+    <Col xs={6} md={4}>
+      <Image src={logoRoad}rounded />
+    </Col>
+  </Row>
+</Container>
     <div className="container-card">
     <Card variant="outlined" 
     style={{
@@ -20,10 +30,10 @@ const IndexPage = () => (
       }}>
       <CardContent>
         <Typography  color="textSecondary" gutterBottom>
-          Word of the Day
+        Елисаветдорбуд
         </Typography>
         <Typography variant="h5" component="h2">
-        zvsdsdfddsfsdf
+        Ремонт дорог – наше призвание!
         </Typography>
         <Typography  color="textSecondary">
           adjective
