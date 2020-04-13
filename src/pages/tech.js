@@ -63,7 +63,7 @@ const Tech = () => (
     <Card.Body>
       <Card.Title>Экскаватор</Card.Title>
       <Card.Text>
-      HANIX SB 30, с тремя ковшами
+      HANIX S&B 30, с тремя ковшами
       </Card.Text>
     </Card.Body>
     <Card.Footer>
@@ -137,13 +137,13 @@ const Tech = () => (
   </CardDeck>
   </div>
   <div className="cards-three">
-  <CardDeck>
+  
   <Card style={{ width: '18rem' }} >
     <Card.Img variant="top" src={trailer} style={{width:"100%"}} />
     <Card.Body>
       <Card.Title>Прицеп</Card.Title>
       <Card.Text>
-      
+      Грузоподъемность 10 тонн
       </Card.Text>
     </Card.Body>
     <Card.Footer>
@@ -156,8 +156,8 @@ const Tech = () => (
     }}>Заказать</Link></Button>
     </Card.Footer>
   </Card>
-</CardDeck>
 </div>
+<div className="button-back">
 <Button style={{
     border:"3px solid grey",
   }}><Link to="/"  
@@ -165,7 +165,7 @@ const Tech = () => (
     textDecoration:"none",
     color:"white"
     }}>Назад</Link></Button>
-    
+    </div>
   </Layout>
 )
 
