@@ -22,11 +22,14 @@ const Tech = () => (
     <h1 className="header">Наша техника</h1>
     <div className="cards">
     <CardDeck>
-  <Card style={{ width: '18rem' }} >
+  <Card style={{ width: '18rem',
+backgroundColor:"rgb(0,0,0)",
+backgroundColor:"rgba(0,0,0,0.4)"
+}} >
     <Card.Img variant="top" src={loader} style={{width:"100%"}} />
     <Card.Body>
-      <Card.Title>Погрузчик</Card.Title>
-      <Card.Text>
+      <Card.Title >Погрузчик</Card.Title>
+      <Card.Text >
       ZTS UN-053
       </Card.Text>
     </Card.Body>
@@ -40,11 +43,14 @@ const Tech = () => (
     }}>Заказать</Link></Button>
     </Card.Footer>
   </Card>
-  <Card style={{ width: '18rem' }}>
+  <Card style={{ width: '18rem',
+backgroundColor:"rgb(0,0,0)",
+backgroundColor:"rgba(0,0,0,0.4)"
+}}>
     <Card.Img variant="top" src={bulldozer} style={{width:"100%"}} />
     <Card.Body>
-      <Card.Title>Бульдозер</Card.Title>
-      <Card.Text>
+      <Card.Title >Бульдозер</Card.Title>
+      <Card.Text >
       ДТ-75
       </Card.Text>
     </Card.Body>
@@ -58,11 +64,14 @@ const Tech = () => (
     }}>Заказать</Link></Button>
     </Card.Footer>
   </Card>
-  <Card style={{ width: '18rem' }}>
+  <Card style={{ width: '18rem',
+backgroundColor:"rgb(0,0,0)",
+backgroundColor:"rgba(0,0,0,0.4)"
+}}>
     <Card.Img variant="top" src={excavator} style={{width:"100%"}} />
     <Card.Body>
-      <Card.Title>Экскаватор</Card.Title>
-      <Card.Text>
+      <Card.Title >Экскаватор</Card.Title>
+      <Card.Text >
       HANIX S&B 30, с тремя ковшами
       </Card.Text>
     </Card.Body>
@@ -80,11 +89,14 @@ const Tech = () => (
 </div>
 <div className="cards-one">
 <CardDeck>
-<Card style={{ width: '18rem' }} >
+<Card style={{ width: '18rem',
+backgroundColor:"rgb(0,0,0)",
+backgroundColor:"rgba(0,0,0,0.4)"
+ }} >
     <Card.Img variant="top" src={maz} style={{width:"100%"}} />
     <Card.Body>
       <Card.Title>Грузовой автотранспорт</Card.Title>
-      <Card.Text>
+      <Card.Text >
       МАЗ-555 с прицепом
       </Card.Text>
     </Card.Body>
@@ -98,7 +110,10 @@ const Tech = () => (
     }}>Заказать</Link></Button>
     </Card.Footer>
   </Card>
-  <Card style={{ width: '18rem' }} >
+  <Card style={{ width: '18rem',
+backgroundColor:"rgb(0,0,0)",
+backgroundColor:"rgba(0,0,0,0.4)"
+}} >
     <Card.Img variant="top" src={mini} style={{width:"100%"}} />
     <Card.Body>
       <Card.Title>Минигудронатор</Card.Title>
@@ -116,7 +131,10 @@ const Tech = () => (
     }}>Заказать</Link></Button>
     </Card.Footer>
   </Card>
-  <Card style={{ width: '18rem' }} >
+  <Card style={{ width: '18rem',
+backgroundColor:"rgb(0,0,0)",
+backgroundColor:"rgba(0,0,0,0.4)"
+}} >
     <Card.Img variant="top" src={reno} style={{width:"100%"}} />
     <Card.Body>
       <Card.Title>Легковой автотранспорт</Card.Title>
@@ -126,11 +144,12 @@ const Tech = () => (
     </Card.Body>
     <Card.Footer>
     <Button style={{
-    backgroundColor:"#90caf9"
+    backgroundColor:"#90caf9",
+    textAlign:"center"
   }}><Link to="/contact/"  
   style={{
     textDecoration:"none",
-    color:""
+    
     }}>Заказать</Link></Button>
     </Card.Footer>
   </Card>
@@ -138,15 +157,20 @@ const Tech = () => (
   </div>
   <div className="cards-three">
   
-  <Card style={{ width: '18rem' }} >
+  <Card style={{ width: '18rem',
+backgroundColor:"rgb(0,0,0)",
+backgroundColor:"rgba(0,0,0,0.4)"
+}} >
     <Card.Img variant="top" src={trailer} style={{width:"100%"}} />
     <Card.Body>
-      <Card.Title>Прицеп</Card.Title>
-      <Card.Text>
+      <Card.Title style={{fontSize:" 1.25rem",
+    textAlign:"center"
+    }}>Прицеп</Card.Title>
+      <Card.Text style={{textAlign:"center"}}>
       Грузоподъемность 10 тонн
       </Card.Text>
     </Card.Body>
-    <Card.Footer>
+    <Card.Footer style={{textAlign:"center"}}>
     <Button style={{
     backgroundColor:"#90caf9"
   }}><Link to="/contact/"  
