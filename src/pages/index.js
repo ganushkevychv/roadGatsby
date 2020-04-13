@@ -1,25 +1,33 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Button, Card, CardContent, Typography } from '@material-ui/core';
+import { Button, Card, CardContent, Typography, CardMedia,CardActionArea, Avatar } from '@material-ui/core';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import Layout from "../components/layout"
 import "../styles/layout.scss"
 import SEO from "../components/seo"
-import StickyFooter from "../components/footer"
-import Image from 'react-bootstrap/Image'
-import {Col, Container, Row} from 'react-bootstrap'
+import Footer from "../components/footer"
 import logoRoad from "../images/logoRoad.png"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home page" />
-    <Container style={{alignItems:"center"}}>
-  <Row style={{justifyContent:"center"}}>
-    <Col xs={6} md={4}>
-      <Image src={logoRoad}rounded />
-    </Col>
-  </Row>
-</Container>
+    <Card variant="outlined" style={{borderRightStyle: "none",
+    display:"flex",
+    justifyContent:"center",
+      borderLeftStyle: "none",
+      backgroundColor: "transparent",
+   
+      }}>
+      
+     <Avatar style={{
+width:"300px",
+height:"300px"
+     }}
+              alt="Ted talk"
+              src={logoRoad}
+            />
+     
+    </Card>
     <div className="container-card">
     <Card variant="outlined" 
     style={{
@@ -50,7 +58,7 @@ const IndexPage = () => (
     style={{
       display: "flex",
       justifyContent: "center",
-      
+      padding:"10px"
       }} >
   <Button style={{
     border:"3px solid grey",
@@ -75,7 +83,7 @@ const IndexPage = () => (
     }}>Контакты</Link></Button>
 </ButtonGroup>
 </div>
-    <StickyFooter/>
+    <Footer/>
   </Layout>
 )
 

@@ -1,11 +1,16 @@
-/*body{
+body{
     background-image: url(../images/road1.jpg);
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-size:cover;
     height: auto;
     width: 100%;
-}*/
-.container-card{
-    padding: 10px;
 }
+
+.MuiCard-root{
+    text-align: center;
+}
+.MuiCardActionArea-root{
+display: flex;
+}
+
