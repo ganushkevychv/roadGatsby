@@ -1,3 +1,7 @@
+.container{
+    margin: 0 auto;
+    max-width: 960px;
+}
 .header{
     text-align: center;
     color: white;
@@ -8,4 +12,9 @@
 .card-deck{
     text-align: center;
     box-sizing: border-box;
+}
+.button-back{
+    display: flex;
+    justify-content:center;
+    padding: 5px;
 }

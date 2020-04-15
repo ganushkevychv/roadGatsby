@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Card, CardDeck } from 'react-bootstrap';
 import { Button } from '@material-ui/core';
@@ -13,6 +12,7 @@ import reno from "../images/reno.jpg"
 import trailer from "../images/trailer.jpg"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/tech.scss"
+
 const Tech = () => (
   
   <div className="container-tech">

@@ -1,7 +1,7 @@
 import React from "react"
 import { Button } from '@material-ui/core'
 import { Link } from "gatsby"
-import Layout from "../components/layout"
+
 import SEO from "../components/seo"
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
@@ -9,7 +9,7 @@ import "../styles/about.scss"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const About = () => (
-  <Layout>
+  <div className="container">
     <SEO title="about" />
     <h1 className="header">Елисаветдорбуд</h1>
     <div>
@@ -146,12 +146,12 @@ const About = () => (
       </Accordion.Toggle>
     </Card.Header>
     <Accordion.Collapse eventKey="1">
-      <Card.Body>Детали оплаты и её форма, рассматриваются в индивидуальном порядке с каждым клиентом. На конечную стоимость может влиять не только объём работ, но и локализация строительного объекта, а также ряд сопутствующих факторов, таких как тип грунта и географические особенности рельефа местности. Аналогично на стоимость работ влияют используемые материалы, поэтому все детали определяются исключительно исходя из конкретно взятых условий.x</Card.Body>
+      <Card.Body>Детали оплаты и её форма, рассматриваются в индивидуальном порядке с каждым клиентом. На конечную стоимость может влиять не только объём работ, но и локализация строительного объекта, а также ряд сопутствующих факторов, таких как тип грунта и географические особенности рельефа местности. Аналогично на стоимость работ влияют используемые материалы, поэтому все детали определяются исключительно исходя из конкретно взятых условий.</Card.Body>
     </Accordion.Collapse>
   </Card>
 </Accordion>
 </div>
-
+<div className="button-back">
     <Button style={{
     border:"3px solid grey",
   }}><Link to="/"  
@@ -159,7 +159,8 @@ const About = () => (
     textDecoration:"none",
     color:"white"
     }}>Назад</Link></Button>
-  </Layout>
+    </div>
+    </div>
 )
 
 export default About
