@@ -7,7 +7,7 @@ import "../styles/layout.scss"
 import SEO from "../components/seo"
 import Footer from "../components/footer"
 import logoRoad from "../images/logoRoad.png"
-
+ 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home page" />
@@ -20,10 +20,10 @@ const IndexPage = () => (
       }}>
       
      <Avatar style={{
-width:"300px",
-height:"300px"
+width:"200px",
+height:"200px"
      }}
-              alt="Ted talk"
+              alt="builder"
               src={logoRoad}
             />
      
@@ -85,6 +85,7 @@ height:"300px"
 </div>
     <Footer/>
   </Layout>
+  
 )
 
 export default IndexPage
