@@ -15,7 +15,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/tech.scss"
 const Tech = () => (
   
-  <Layout>
+  <div className="container-tech">
     <SEO title="Page two" />
     <h1 className="header">Наша техника</h1>
     <div className="cards">
@@ -231,7 +231,7 @@ backgroundColor:"rgba(0,0,0,0.4)"
     color:"white"
     }}>Назад</Link></Button>
     </div>
-  </Layout>
+    </div>
 )
 
 export default Tech

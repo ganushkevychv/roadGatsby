@@ -1,3 +1,11 @@
+.container-tech {
+    margin: 0 auto;
+    max-width: 960px;
+}
+.cards, .cards-one,.cards-two,.cards-three{
+    display: flex;
+    justify-content: center;
+}
 .card-trailer{
     padding: "10px"
 }
