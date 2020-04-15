@@ -11,8 +11,6 @@ import maz from "../images/maz.jpg"
 import mini from "../images/mini.png"
 import reno from "../images/reno.jpg"
 import trailer from "../images/trailer.jpg"
-
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/tech.scss"
 const Tech = () => (
@@ -157,20 +155,19 @@ backgroundColor:"rgba(0,0,0,0.4)"
   </div>
   <div className="cards-three">
   
-  <Card style={{ width: '18rem',
+  <CardDeck>
+<Card style={{ width: '18rem',
 backgroundColor:"rgb(0,0,0)",
 backgroundColor:"rgba(0,0,0,0.4)"
-}} >
+ }} >
     <Card.Img variant="top" src={trailer} style={{width:"100%"}} />
     <Card.Body>
-      <Card.Title style={{fontSize:" 1.25rem",
-    textAlign:"center"
-    }}>Прицеп</Card.Title>
-      <Card.Text style={{textAlign:"center"}}>
+      <Card.Title>Прицеп</Card.Title>
+      <Card.Text >
       Грузоподъемность 10 тонн
       </Card.Text>
     </Card.Body>
-    <Card.Footer style={{textAlign:"center"}}>
+    <Card.Footer>
     <Button style={{
     backgroundColor:"#90caf9"
   }}><Link to="/contact/"  
@@ -180,6 +177,50 @@ backgroundColor:"rgba(0,0,0,0.4)"
     }}>Заказать</Link></Button>
     </Card.Footer>
   </Card>
+  <Card style={{ width: '18rem',
+backgroundColor:"rgb(0,0,0)",
+backgroundColor:"rgba(0,0,0,0.4)"
+}} >
+    <Card.Img variant="top" src={reno} style={{width:"100%"}} />
+    <Card.Body>
+      <Card.Title>Легковой автотранспорт</Card.Title>
+      <Card.Text>
+      Ford Transit с прицепом
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+    <Button style={{
+    backgroundColor:"#90caf9"
+  }}><Link to="/contact/"  
+  style={{
+    textDecoration:"none",
+    color:""
+    }}>Заказать</Link></Button>
+    </Card.Footer>
+  </Card>
+  <Card style={{ width: '18rem',
+backgroundColor:"rgb(0,0,0)",
+backgroundColor:"rgba(0,0,0,0.4)"
+}} >
+    <Card.Img variant="top" src={reno} style={{width:"100%"}} />
+    <Card.Body>
+      <Card.Title>Легковой автотранспорт</Card.Title>
+      <Card.Text>
+      RENO TRAFFIC с прицепом
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+    <Button style={{
+    backgroundColor:"#90caf9",
+    textAlign:"center"
+  }}><Link to="/contact/"  
+  style={{
+    textDecoration:"none",
+    
+    }}>Заказать</Link></Button>
+    </Card.Footer>
+  </Card>
+  </CardDeck>
 </div>
 <div className="button-back">
 <Button style={{

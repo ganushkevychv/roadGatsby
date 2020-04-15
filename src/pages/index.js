@@ -83,7 +83,7 @@ height:"200px"
     }}>Контакты</Link></Button>
 </ButtonGroup>
 </div>
-    <Footer/>
+    
   </Layout>
   
 )
