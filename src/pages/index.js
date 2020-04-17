@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Button, Card, CardContent, Typography, CardMedia,CardActionArea, Avatar } from '@material-ui/core';
+import { Button, Card, CardContent, Typography, Avatar } from '@material-ui/core';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import "../styles/layout.scss"
 import SEO from "../components/seo"
