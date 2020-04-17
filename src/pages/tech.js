@@ -8,6 +8,8 @@ import bulldozer from "../images/bulldozer.jpg"
 import excavator from "../images/excavator.png"
 import maz from "../images/maz.jpg"
 import mini from "../images/mini.png"
+import ford from "../images/ford.png"
+import dumper from "../images/dumper.jpg"
 import reno from "../images/reno.jpg"
 import trailer from "../images/trailer.jpg"
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -181,7 +183,7 @@ backgroundColor:"rgba(0,0,0,0.4)"
 backgroundColor:"rgb(0,0,0)",
 backgroundColor:"rgba(0,0,0,0.4)"
 }} >
-    <Card.Img variant="top" src={reno} style={{width:"100%"}} />
+    <Card.Img variant="top" src={ford} style={{width:"100%"}} />
     <Card.Body>
       <Card.Title>Легковой автотранспорт</Card.Title>
       <Card.Text>
@@ -202,11 +204,11 @@ backgroundColor:"rgba(0,0,0,0.4)"
 backgroundColor:"rgb(0,0,0)",
 backgroundColor:"rgba(0,0,0,0.4)"
 }} >
-    <Card.Img variant="top" src={reno} style={{width:"100%"}} />
+    <Card.Img variant="top" src={dumper} style={{width:"100%"}} />
     <Card.Body>
-      <Card.Title>Легковой автотранспорт</Card.Title>
+      <Card.Title>Думпер</Card.Title>
       <Card.Text>
-      RENO TRAFFIC с прицепом
+      описание
       </Card.Text>
     </Card.Body>
     <Card.Footer>
