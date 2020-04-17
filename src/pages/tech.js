@@ -259,7 +259,7 @@ backgroundColor:"rgba(0,0,0,0.4)"
     <Card.Body>
       <Card.Title>Каток</Card.Title>
       <Card.Text>
-      Ford Transit с прицепом
+      DYNAPAC vibrationswalze CC 82/92
       </Card.Text>
     </Card.Body>
     <Card.Footer>
