@@ -18,9 +18,9 @@ const Contact = () => (
     <ListGroup style={{
       backgroundColor:"transparent"
     }}>
-  <ListGroup.Item style={{backgroundColor:"transparent"}}><p><a href="tel:+380992983816"><img src={tel}/> +380992983816</a></p></ListGroup.Item>
-  <ListGroup.Item style={{backgroundColor:"transparent"}}><p><a href="tel:+380974055785"><img src={tel}/> +380974055785</a></p></ListGroup.Item>
-  <ListGroup.Item style={{backgroundColor:"transparent"}}><p><a href="mailto:kirichkov2016@gmail.com"><img src={gmail}/> kirichkov2016@gmail.com</a></p></ListGroup.Item>
+  <ListGroup.Item style={{backgroundColor:"transparent"}}><p className="text"><a className="link-text" href="tel:+380992983816"><img className="tel" src={tel} alt="tel"/> +380992983816</a></p></ListGroup.Item>
+  <ListGroup.Item style={{backgroundColor:"transparent"}}><p className="text"><a className="link-text" href="tel:+380974055785"><img className="tel" src={tel} alt="tel"/> +380974055785</a></p></ListGroup.Item>
+  <ListGroup.Item style={{backgroundColor:"transparent"}}><p className="text"><a className="link-text" href="mailto:kirichkov2016@gmail.com"><img className="gmail" src={gmail} tel="gmail"/> kirichkov2016@gmail.com</a></p></ListGroup.Item>
 </ListGroup>
     </div>
     <div className="button-back">
