@@ -83,7 +83,8 @@ const IndexPage = () => (
       >
         <Button
           style={{
-            border: "3px solid grey"
+            border: "3px solid grey",
+            backgroundColor:"rgba(0,0,0,0.4)"
           }}
         >
           <Link
@@ -98,7 +99,8 @@ const IndexPage = () => (
         </Button>
         <Button
           style={{
-            border: "3px solid grey"
+            border: "3px solid grey",
+            backgroundColor:"rgba(0,0,0,0.4)"
           }}
         >
           <Link
@@ -113,7 +115,8 @@ const IndexPage = () => (
         </Button>
         <Button
           style={{
-            border: "3px solid grey"
+            border: "3px solid grey",
+              backgroundColor:"rgba(0,0,0,0.4)"
           }}
         >
           <Link

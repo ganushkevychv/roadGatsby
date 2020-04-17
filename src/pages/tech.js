@@ -299,6 +299,7 @@ backgroundColor:"rgba(0,0,0,0.4)"
 <div className="button-back">
 <Button style={{
     border:"3px solid grey",
+    backgroundColor:"rgba(0,0,0,0.4)"
   }}><Link to="/"  
   style={{
     textDecoration:"none",

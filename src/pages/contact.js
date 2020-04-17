@@ -16,7 +16,7 @@ const Contact = () => (
     </div>
     <div className="contact-card">
     <ListGroup style={{
-      backgroundColor:"transparent"
+      backgroundColor:"rgba(0,0,0,0.4)"
     }}>
   <ListGroup.Item style={{backgroundColor:"transparent"}}><p className="text"><a className="link-text" href="tel:+380992983816"><img className="tel" src={tel} alt="tel"/> +380992983816</a></p></ListGroup.Item>
   <ListGroup.Item style={{backgroundColor:"transparent"}}><p className="text"><a className="link-text" href="tel:+380974055785"><img className="tel" src={tel} alt="tel"/> +380974055785</a></p></ListGroup.Item>
@@ -26,6 +26,7 @@ const Contact = () => (
     <div className="button-back">
     <Button style={{
     border:"3px solid grey",
+    backgroundColor:"rgba(0,0,0,0.4)"
   }}><Link to="/"  
   style={{
     textDecoration:"none",

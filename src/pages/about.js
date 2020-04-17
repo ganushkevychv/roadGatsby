@@ -14,7 +14,6 @@ const About = () => (
     <h1 className="header">Елисаветдорбуд</h1>
     <div>
     <Card style={{
-      backgroundColor:"rgb(0,0,0)",
       backgroundColor:"rgba(0,0,0,0.4)"
     }}>
       <Card.Text style={{textAlign:"center"}}>
@@ -28,7 +27,6 @@ const About = () => (
     <div>
     <Accordion >
   <Card style={{
-      backgroundColor:"rgb(0,0,0)",
       backgroundColor:"rgba(0,0,0,0.4)"
     }}>
     <Card.Header>
@@ -81,7 +79,6 @@ const About = () => (
     </Accordion.Collapse>
   </Card>
   <Card style={{
-      backgroundColor:"rgb(0,0,0)",
       backgroundColor:"rgba(0,0,0,0.4)"
     }}>
     <Card.Header>
@@ -106,7 +103,6 @@ const About = () => (
 </Accordion>
 <Accordion>
 <Card style={{
-      backgroundColor:"rgb(0,0,0)",
       backgroundColor:"rgba(0,0,0,0.4)"
     }}>
     <Card.Header>
@@ -128,7 +124,6 @@ const About = () => (
     </Accordion.Collapse>
   </Card>
   <Card style={{
-      backgroundColor:"rgb(0,0,0)",
       backgroundColor:"rgba(0,0,0,0.4)"
     }}>
     <Card.Header>
@@ -154,6 +149,7 @@ const About = () => (
 <div className="button-back">
     <Button style={{
     border:"3px solid grey",
+    backgroundColor:"rgba(0,0,0,0.4)"
   }}><Link to="/"  
   style={{
     textDecoration:"none",
