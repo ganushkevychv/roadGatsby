@@ -52,9 +52,9 @@ backgroundColor:"rgba(0,0,0,0.4)"
 }}>
     <Card.Img variant="top" src={bulldozer} style={{width:"100%"}} />
     <Card.Body>
-      <Card.Title >Бульдозер</Card.Title>
+      <Card.Title >Автогрейдер</Card.Title>
       <Card.Text >
-      ДТ-75
+      ДЗ-99
       </Card.Text>
     </Card.Body>
     <Card.Footer>
