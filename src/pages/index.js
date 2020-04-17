@@ -36,10 +36,17 @@ height:"200px"
       borderLeftStyle: "none",
       }}>
       <CardContent>
-        <Typography  color="textSecondary" variant="h1" gutterBottom component="h1">
+        <div className="company-h1">
+        <Typography  color="textPrimary" variant="h1" gutterBottom component="h1" style={{
+          fontSize:"2.6rem",
+          color:"black"
+        }}>
         Елисаветдорбуд
         </Typography>
-        <Typography variant="h5" component="h2">
+        </div>
+        <Typography variant="h5" component="h2" style={{
+          color:"white"
+        }}>
         Ремонт дорог – наше призвание!
         </Typography>
       </CardContent>
@@ -55,21 +62,21 @@ height:"200px"
   }}><Link to="/about/"  
   style={{
     textDecoration:"none",
-    color:"black"
+    color:"white"
     }}>О нас</Link></Button>
   <Button style={{
     border:"3px solid grey",
   }} ><Link to="/tech/"  
   style={{
     textDecoration:"none",
-    color:"black"
+    color:"white"
     }}>Техника</Link></Button>
   <Button style={{
     border:"3px solid grey",
   }}><Link to="/contact/"  
   style={{
     textDecoration:"none",
-    color:"black"
+    color:"white"
     }}>Контакты</Link></Button>
 </ButtonGroup>
 </div>

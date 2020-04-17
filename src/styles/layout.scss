@@ -1,11 +1,11 @@
-/*body{
+body{
     background-image: url(../images/road1.jpg);
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-size:cover;
     height: auto;
     width: 100%;
-}*/
+}
 .container{
     margin: 0 auto;
     max-width: 960px;
@@ -19,8 +19,18 @@ justify-content: center;
 }
 .MuiCard-root{
     text-align: center;
+    padding: 0px;
 }
 .MuiCardActionArea-root{
 display: flex;
 }
+.MuiCardContent-root {
+    padding: 0px;
+}
+.MuiTypography-colorTextSecondary{
+    color:rgb(0, 0, 0); 
+}
 
+.MuiTypography-gutterBottom {
+    margin-bottom:none;
+}   
