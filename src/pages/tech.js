@@ -20,7 +20,6 @@ import trailer from "../images/trailer.jpg"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/tech.scss"
 
-
 const Tech = (props) => (
   <BackgroundImage className="backgroundTech"
     fluid={props.data.techImage.childImageSharp.fluid}
@@ -301,7 +300,6 @@ backgroundColor:"rgba(0,0,0,0.4)"
     </div>
     </div>
     </BackgroundImage>
-    
 )
 
 export default Tech

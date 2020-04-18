@@ -4,7 +4,6 @@
     overflow-x: hidden;
     width: auto;
     height: 100vh;
-    
 }
 ::-webkit-scrollbar {
     width: 0px;
@@ -31,7 +30,6 @@
 .button-back{
     display: flex;
     justify-content: center;
-  
 }
 .backgroundTech{
 width:100%;
@@ -39,7 +37,7 @@ height: 100vh;
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
-
+margin-bottom: 10px;
 }
 div.container{
 width:100%;
