@@ -7,8 +7,13 @@ import "../styles/contacts.scss"
 import tel from "../images/tel.png"
 import gmail from "../images/gmail.png"
 import ListGroup from 'react-bootstrap/ListGroup'
+import BackgroundImage from "gatsby-background-image"
+import { graphql } from "gatsby"
 
-const Contact = () => (
+const Contact = (props) => (
+  <BackgroundImage className="background"
+    fluid={props.data.indexImage.childImageSharp.fluid}
+    >
   <div className="container">
     <SEO title="contact" />
     <div className="contacts-h1">
@@ -34,6 +39,18 @@ const Contact = () => (
     }}>Назад</Link></Button>
     </div>
   </div>
+  </BackgroundImage>
 )
 
 export default Contact
+export const pageQuery = graphql`
+query {
+  indexImage: file(relativePath: { eq: "road1.jpg" }){
+    childImageSharp {
+      fluid(maxWidth: 3426){
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+}
+`;

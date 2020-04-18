@@ -1,14 +1,18 @@
 import React from "react"
 import { Button } from '@material-ui/core'
 import { Link } from "gatsby"
-
+import BackgroundImage from "gatsby-background-image"
+import { graphql } from "gatsby"
 import SEO from "../components/seo"
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
 import "../styles/about.scss"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const About = () => (
+const About = (props) => (
+  <BackgroundImage className="background"
+  fluid={props.data.indexImage.childImageSharp.fluid}
+  >
   <div className="container">
     <SEO title="about" />
     <h1 className="header">Елисаветдорбуд</h1>
@@ -157,6 +161,19 @@ const About = () => (
     }}>Назад</Link></Button>
     </div>
     </div>
+    </BackgroundImage>
 )
 
 export default About
+
+export const pageQuery = graphql`
+query {
+  indexImage: file(relativePath: { eq: "road1.jpg" }){
+    childImageSharp {
+      fluid(maxWidth: 3426){
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+}
+`;

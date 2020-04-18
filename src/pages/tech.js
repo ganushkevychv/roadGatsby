@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import SEO from "../components/seo"
+import BackgroundImage from "gatsby-background-image"
+import { graphql } from "gatsby"
 import { Card, CardDeck } from 'react-bootstrap';
 import { Button } from '@material-ui/core';
 import loader from "../images/loader.jpg"
@@ -18,8 +20,10 @@ import trailer from "../images/trailer.jpg"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/tech.scss"
 
-const Tech = () => (
-  
+const Tech = (props) => (
+  <BackgroundImage className="background"
+    fluid={props.data.indexImage.childImageSharp.fluid}
+    >
   <div className="container-tech">
     <SEO title="Page two" />
     <h1 className="header">Наша техника</h1>
@@ -307,6 +311,19 @@ backgroundColor:"rgba(0,0,0,0.4)"
     }}>Назад</Link></Button>
     </div>
     </div>
+    </BackgroundImage>
 )
 
 export default Tech
+
+export const pageQuery = graphql`
+query {
+  indexImage: file(relativePath: { eq: "road1.jpg" }){
+    childImageSharp {
+      fluid(maxWidth: 3426){
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+}
+`;
