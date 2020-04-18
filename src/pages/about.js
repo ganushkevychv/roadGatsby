@@ -10,8 +10,8 @@ import "../styles/about.scss"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const About = (props) => (
-  <BackgroundImage className="background"
-  fluid={props.data.indexImage.childImageSharp.fluid}
+  <BackgroundImage className="backgroundAbout"
+  fluid={props.data.aboutImage.childImageSharp.fluid}
   >
   <div className="container">
     <SEO title="about" />
@@ -168,7 +168,7 @@ export default About
 
 export const pageQuery = graphql`
 query {
-  indexImage: file(relativePath: { eq: "road1.jpg" }){
+  aboutImage: file(relativePath: { eq: "road1.jpg" }){
     childImageSharp {
       fluid(maxWidth: 3426){
         ...GatsbyImageSharpFluid

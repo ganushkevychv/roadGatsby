@@ -10,7 +10,6 @@ import {
 import ButtonGroup from "@material-ui/core/ButtonGroup";
 import "../styles/layout.scss";
 import SEO from "../components/seo";
-import Layout from "../components/layout"
 import BackgroundImage from "gatsby-background-image"
 import { graphql } from "gatsby"
 
@@ -148,7 +147,7 @@ export const pageQuery = graphql`
 query {
   indexImage: file(relativePath: { eq: "road1.jpg" }){
     childImageSharp {
-      fluid(maxWidth: 3426){
+      fluid(maxWidth: 1900){
         ...GatsbyImageSharpFluid
       }
     }

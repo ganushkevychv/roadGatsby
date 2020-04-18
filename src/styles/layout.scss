@@ -51,5 +51,31 @@ height: 100vh;
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
-margin-bottom: 10px;
+
+}
+
+.background.gbi-854402301-b1sRKAGnrp5GBSa17FEK1E:before,
+.background.gbi-854402301-b1sRKAGnrp5GBSa17FEK1E:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0; 
+  transition: none;
+  background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+background-position-x: center;
+background-position-y: center;
+
+}
+.background.gbi-854402301-b1sRKAGnrp5GBSa17FEK1E:before {
+  z-index: -100;
+  opacity: 1; 
+}
+.background.gbi-854402301-b1sRKAGnrp5GBSa17FEK1E:after {
+  z-index: -101;
+  opacity: 0;
 }

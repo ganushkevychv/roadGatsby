@@ -1,7 +1,14 @@
 .container-tech {
     margin: 0 auto;
     max-width: 960px;
+    overflow-x: hidden;
+    width: auto;
+    height: 100vh;
 }
+::-webkit-scrollbar {
+    width: 0px;
+    background: rgba(255, 255, 255, 0.0);
+  }
 .cards, .cards-one,.cards-two,.cards-three,.cards-four{
     display: flex;
     justify-content: center;
@@ -24,11 +31,19 @@
     display: flex;
     justify-content: center;
 }
-.background{
+.backgroundTech{
 width:100%;
 height: 100vh;
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
 margin-bottom: 10px;
+}
+div.container{
+width:100%;
+height: 100vh;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
 }

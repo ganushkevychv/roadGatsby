@@ -11,8 +11,8 @@ import BackgroundImage from "gatsby-background-image"
 import { graphql } from "gatsby"
 
 const Contact = (props) => (
-  <BackgroundImage className="background"
-    fluid={props.data.indexImage.childImageSharp.fluid}
+  <BackgroundImage className="backgroundContacts"
+    fluid={props.data.contactsImage.childImageSharp.fluid}
     >
   <div className="container">
     <SEO title="contact" />
@@ -45,7 +45,7 @@ const Contact = (props) => (
 export default Contact
 export const pageQuery = graphql`
 query {
-  indexImage: file(relativePath: { eq: "road1.jpg" }){
+  contactsImage: file(relativePath: { eq: "road1.jpg" }){
     childImageSharp {
       fluid(maxWidth: 3426){
         ...GatsbyImageSharpFluid

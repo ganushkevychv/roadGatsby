@@ -21,8 +21,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/tech.scss"
 
 const Tech = (props) => (
-  <BackgroundImage className="background"
-    fluid={props.data.indexImage.childImageSharp.fluid}
+  <BackgroundImage className="backgroundTech"
+    fluid={props.data.techImage.childImageSharp.fluid}
     >
   <div className="container-tech">
     <SEO title="Page two" />
@@ -30,7 +30,6 @@ const Tech = (props) => (
     <div className="cards">
     <CardDeck>
   <Card style={{ width: '18rem',
-backgroundColor:"rgb(0,0,0)",
 backgroundColor:"rgba(0,0,0,0.4)"
 }} >
     <Card.Img variant="top" src={loader} style={{width:"100%"}} />
@@ -51,7 +50,6 @@ backgroundColor:"rgba(0,0,0,0.4)"
     </Card.Footer>
   </Card>
   <Card style={{ width: '18rem',
-backgroundColor:"rgb(0,0,0)",
 backgroundColor:"rgba(0,0,0,0.4)"
 }}>
     <Card.Img variant="top" src={bulldozer} style={{width:"100%"}} />
@@ -72,7 +70,6 @@ backgroundColor:"rgba(0,0,0,0.4)"
     </Card.Footer>
   </Card>
   <Card style={{ width: '18rem',
-backgroundColor:"rgb(0,0,0)",
 backgroundColor:"rgba(0,0,0,0.4)"
 }}>
     <Card.Img variant="top" src={excavator} style={{width:"100%"}} />
@@ -97,7 +94,6 @@ backgroundColor:"rgba(0,0,0,0.4)"
 <div className="cards-one">
 <CardDeck>
 <Card style={{ width: '18rem',
-backgroundColor:"rgb(0,0,0)",
 backgroundColor:"rgba(0,0,0,0.4)"
  }} >
     <Card.Img variant="top" src={maz} style={{width:"100%"}} />
@@ -118,7 +114,6 @@ backgroundColor:"rgba(0,0,0,0.4)"
     </Card.Footer>
   </Card>
   <Card style={{ width: '18rem',
-backgroundColor:"rgb(0,0,0)",
 backgroundColor:"rgba(0,0,0,0.4)"
 }} >
     <Card.Img variant="top" src={mini} style={{width:"100%"}} />
@@ -139,7 +134,6 @@ backgroundColor:"rgba(0,0,0,0.4)"
     </Card.Footer>
   </Card>
   <Card style={{ width: '18rem',
-backgroundColor:"rgb(0,0,0)",
 backgroundColor:"rgba(0,0,0,0.4)"
 }} >
     <Card.Img variant="top" src={reno} style={{width:"100%"}} />
@@ -166,7 +160,6 @@ backgroundColor:"rgba(0,0,0,0.4)"
   
   <CardDeck>
 <Card style={{ width: '18rem',
-backgroundColor:"rgb(0,0,0)",
 backgroundColor:"rgba(0,0,0,0.4)"
  }} >
     <Card.Img variant="top" src={trailer} style={{width:"100%"}} />
@@ -187,7 +180,6 @@ backgroundColor:"rgba(0,0,0,0.4)"
     </Card.Footer>
   </Card>
   <Card style={{ width: '18rem',
-backgroundColor:"rgb(0,0,0)",
 backgroundColor:"rgba(0,0,0,0.4)"
 }} >
     <Card.Img variant="top" src={ford} style={{width:"100%"}} />
@@ -208,7 +200,6 @@ backgroundColor:"rgba(0,0,0,0.4)"
     </Card.Footer>
   </Card>
   <Card style={{ width: '18rem',
-backgroundColor:"rgb(0,0,0)",
 backgroundColor:"rgba(0,0,0,0.4)"
 }} >
     <Card.Img variant="top" src={dumper} style={{width:"100%"}} />
@@ -235,7 +226,6 @@ backgroundColor:"rgba(0,0,0,0.4)"
   
   <CardDeck>
 <Card style={{ width: '18rem',
-backgroundColor:"rgb(0,0,0)",
 backgroundColor:"rgba(0,0,0,0.4)"
  }} >
     <Card.Img variant="top" src={carTrailer} style={{width:"100%"}} />
@@ -256,7 +246,6 @@ backgroundColor:"rgba(0,0,0,0.4)"
     </Card.Footer>
   </Card>
   <Card style={{ width: '18rem',
-backgroundColor:"rgb(0,0,0)",
 backgroundColor:"rgba(0,0,0,0.4)"
 }} >
     <Card.Img variant="top" src={roller} style={{width:"100%"}} />
@@ -277,7 +266,6 @@ backgroundColor:"rgba(0,0,0,0.4)"
     </Card.Footer>
   </Card>
   <Card style={{ width: '18rem',
-backgroundColor:"rgb(0,0,0)",
 backgroundColor:"rgba(0,0,0,0.4)"
 }} >
     <Card.Img variant="top" src={stuff} style={{width:"100%"}} />
@@ -318,7 +306,7 @@ export default Tech
 
 export const pageQuery = graphql`
 query {
-  indexImage: file(relativePath: { eq: "road1.jpg" }){
+  techImage: file(relativePath: { eq: "road1.jpg" }){
     childImageSharp {
       fluid(maxWidth: 3426){
         ...GatsbyImageSharpFluid
