@@ -10,12 +10,19 @@ import {
 import ButtonGroup from "@material-ui/core/ButtonGroup";
 import "../styles/layout.scss";
 import SEO from "../components/seo";
+import Layout from "../components/layout"
+import BackgroundImage from "gatsby-background-image"
+import { graphql } from "gatsby"
 
 import logoRoller from "../images/logoRoller.png";
 
-const IndexPage = () => (
+const IndexPage = (props) => (
+  <BackgroundImage className="background"
+    fluid={props.data.indexImage.childImageSharp.fluid}
+    >
   <div className="container">
     <SEO title="Home page" />
+   
     <div className="container-logo">
       <Card
         variant="outlined"
@@ -132,6 +139,19 @@ const IndexPage = () => (
       </ButtonGroup>
     </div>
   </div>
+  </BackgroundImage>
 );
 
 export default IndexPage;
+
+export const pageQuery = graphql`
+query {
+  indexImage: file(relativePath: { eq: "road1.jpg" }){
+    childImageSharp {
+      fluid(maxWidth: 3426){
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+}
+`;

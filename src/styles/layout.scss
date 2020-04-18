@@ -1,11 +1,11 @@
-body{
+/*body{
     background-image: url(../images/road1.jpg);
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-size:cover;
     height: auto;
     width: 100%;
-}
+}*/
 .container{
     margin: 0 auto;
     max-width: 960px;
@@ -44,4 +44,12 @@ img.MuiAvatar-img {
 }
 div.MuiCardContent-root {
     background-color: rgba(0,0,0,0.3);
+}
+.background{
+    width:100%;
+    height: 100vh;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+margin-bottom: 10px;
 }
