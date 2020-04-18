@@ -12,6 +12,7 @@ import "../styles/layout.scss";
 import SEO from "../components/seo";
 import BackgroundImage from "gatsby-background-image"
 import { graphql } from "gatsby"
+import  Footer  from "../components/footer"
 
 import logoRoller from "../images/logoRoller.png";
 
@@ -138,7 +139,9 @@ const IndexPage = (props) => (
       </ButtonGroup>
     </div>
   </div>
+  <Footer/>
   </BackgroundImage>
+  
 );
 
 export default IndexPage;
