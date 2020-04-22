@@ -35,31 +35,11 @@ const Tech = (props) => (
   <Card style={{ width: '18rem',
 backgroundColor:"rgba(0,0,0,0.4)"
 }} >
-    <Card.Img variant="top" src={loader} style={{width:"100%"}} />
+    <Card.Img variant="top" src={roller} style={{width:"100%"}} />
     <Card.Body>
-      <Card.Title >Погрузчик</Card.Title>
+      <Card.Title >Каток</Card.Title>
       <Card.Text >
-      ZTS UN-053
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-    <Button style={{
-    backgroundColor:"#90caf9"
-  }}><Link to="/contact/"  
-  style={{
-    textDecoration:"none",
-    color:""
-    }}>Заказать</Link></Button>
-    </Card.Footer>
-  </Card>
-  <Card style={{ width: '18rem',
-backgroundColor:"rgba(0,0,0,0.4)"
-}}>
-    <Card.Img variant="top" src={bulldozer} style={{width:"100%"}} />
-    <Card.Body>
-      <Card.Title >Автогрейдер</Card.Title>
-      <Card.Text >
-      ДЗ-99
+      DYNAPAC vibrationswalze CC 82/92
       </Card.Text>
     </Card.Body>
     <Card.Footer>
@@ -92,6 +72,26 @@ backgroundColor:"rgba(0,0,0,0.4)"
     }}>Заказать</Link></Button>
     </Card.Footer>
   </Card>
+  <Card style={{ width: '18rem',
+backgroundColor:"rgba(0,0,0,0.4)"
+}}>
+    <Card.Img variant="top" src={grader} style={{width:"100%"}} />
+    <Card.Body>
+      <Card.Title >Бульдозер</Card.Title>
+      <Card.Text >
+      ДТ-75
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+    <Button style={{
+    backgroundColor:"#90caf9"
+  }}><Link to="/contact/"  
+  style={{
+    textDecoration:"none",
+    color:""
+    }}>Заказать</Link></Button>
+    </Card.Footer>
+  </Card>
 </CardDeck>
 </div>
 <div className="cards-one">
@@ -99,51 +99,51 @@ backgroundColor:"rgba(0,0,0,0.4)"
 <Card style={{ width: '18rem',
 backgroundColor:"rgba(0,0,0,0.4)"
  }} >
+    <Card.Img variant="top" src={bulldozer} style={{width:"100%"}} />
+    <Card.Body>
+      <Card.Title>Автогрейдер</Card.Title>
+      <Card.Text >
+      ДЗ-99
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+    <Button style={{
+    backgroundColor:"#90caf9"
+  }}><Link to="/contact/"  
+  style={{
+    textDecoration:"none",
+    color:""
+    }}>Заказать</Link></Button>
+    </Card.Footer>
+  </Card>
+  <Card style={{ width: '18rem',
+backgroundColor:"rgba(0,0,0,0.4)"
+}} >
+    <Card.Img variant="top" src={loader} style={{width:"100%"}} />
+    <Card.Body>
+      <Card.Title>Погрузчик</Card.Title>
+      <Card.Text>
+      ZTS UN-053
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+    <Button style={{
+    backgroundColor:"#90caf9"
+  }}><Link to="/contact/"  
+  style={{
+    textDecoration:"none",
+    color:""
+    }}>Заказать</Link></Button>
+    </Card.Footer>
+  </Card>
+  <Card style={{ width: '18rem',
+backgroundColor:"rgba(0,0,0,0.4)"
+}} >
     <Card.Img variant="top" src={maz} style={{width:"100%"}} />
     <Card.Body>
       <Card.Title>Грузовой автотранспорт</Card.Title>
-      <Card.Text >
+      <Card.Text>
       МАЗ-555 с прицепом
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-    <Button style={{
-    backgroundColor:"#90caf9"
-  }}><Link to="/contact/"  
-  style={{
-    textDecoration:"none",
-    color:""
-    }}>Заказать</Link></Button>
-    </Card.Footer>
-  </Card>
-  <Card style={{ width: '18rem',
-backgroundColor:"rgba(0,0,0,0.4)"
-}} >
-    <Card.Img variant="top" src={mini} style={{width:"100%"}} />
-    <Card.Body>
-      <Card.Title>Минигудронатор</Card.Title>
-      <Card.Text>
-      TICAB БР-500
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-    <Button style={{
-    backgroundColor:"#90caf9"
-  }}><Link to="/contact/"  
-  style={{
-    textDecoration:"none",
-    color:""
-    }}>Заказать</Link></Button>
-    </Card.Footer>
-  </Card>
-  <Card style={{ width: '18rem',
-backgroundColor:"rgba(0,0,0,0.4)"
-}} >
-    <Card.Img variant="top" src={reno} style={{width:"100%"}} />
-    <Card.Body>
-      <Card.Title>Легковой автотранспорт</Card.Title>
-      <Card.Text>
-      RENO TRAFFIC с прицепом
       </Card.Text>
     </Card.Body>
     <Card.Footer>
@@ -185,11 +185,11 @@ backgroundColor:"rgba(0,0,0,0.4)"
   <Card style={{ width: '18rem',
 backgroundColor:"rgba(0,0,0,0.4)"
 }} >
-    <Card.Img variant="top" src={ford} style={{width:"100%"}} />
+    <Card.Img variant="top" src={tral} style={{width:"100%"}} />
     <Card.Body>
-      <Card.Title>Легковой автотранспорт</Card.Title>
+      <Card.Title>Трал</Card.Title>
       <Card.Text>
-      Ford Transit с прицепом
+      Грузоподъемность 8 тонн
       </Card.Text>
     </Card.Body>
     <Card.Footer>
@@ -231,11 +231,11 @@ backgroundColor:"rgba(0,0,0,0.4)"
 <Card style={{ width: '18rem',
 backgroundColor:"rgba(0,0,0,0.4)"
  }} >
-    <Card.Img variant="top" src={carTrailer} style={{width:"100%"}} />
+    <Card.Img variant="top" src={mini} style={{width:"100%"}} />
     <Card.Body>
-      <Card.Title>Прицеп</Card.Title>
+      <Card.Title>Минигудронатор</Card.Title>
       <Card.Text >
-      Грузоподъемность 2 тонны
+      TICAB БР-500
       </Card.Text>
     </Card.Body>
     <Card.Footer>
@@ -251,11 +251,57 @@ backgroundColor:"rgba(0,0,0,0.4)"
   <Card style={{ width: '18rem',
 backgroundColor:"rgba(0,0,0,0.4)"
 }} >
-    <Card.Img variant="top" src={roller} style={{width:"100%"}} />
+    <Card.Img variant="top" src={reno} style={{width:"100%"}} />
     <Card.Body>
-      <Card.Title>Каток</Card.Title>
+      <Card.Title>Легковой автотранспорт</Card.Title>
       <Card.Text>
-      DYNAPAC vibrationswalze CC 82/92
+      RENO TRAFFIC с прицепом
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+    <Button style={{
+    backgroundColor:"#90caf9"
+  }}><Link to="/contact/"  
+  style={{
+    textDecoration:"none",
+    color:""
+    }}>Заказать</Link></Button>
+    </Card.Footer>
+  </Card>
+  <Card style={{ width: '18rem',
+backgroundColor:"rgba(0,0,0,0.4)"
+}} >
+    <Card.Img variant="top" src={ford} style={{width:"100%"}} />
+    <Card.Body>
+      <Card.Title>Легковой автотранспорт</Card.Title>
+      <Card.Text>
+      FORD TRANSIT с прицепом
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+    <Button style={{
+    backgroundColor:"#90caf9",
+    textAlign:"center"
+  }}><Link to="/contact/"  
+  style={{
+    textDecoration:"none",
+    
+    }}>Заказать</Link></Button>
+    </Card.Footer>
+  </Card>
+  </CardDeck>
+</div>
+<div className="cards-five">
+  
+  <CardDeck>
+<Card style={{ width: '18rem',
+backgroundColor:"rgba(0,0,0,0.4)"
+ }} >
+    <Card.Img variant="top" src={carTrailer} style={{width:"100%"}} />
+    <Card.Body>
+      <Card.Title>Прицеп</Card.Title>
+      <Card.Text >
+      Грузоподъемность 2 тонны
       </Card.Text>
     </Card.Body>
     <Card.Footer>
@@ -280,52 +326,6 @@ backgroundColor:"rgba(0,0,0,0.4)"
     </Card.Body>
     <Card.Footer>
     <Button style={{
-    backgroundColor:"#90caf9",
-    textAlign:"center"
-  }}><Link to="/contact/"  
-  style={{
-    textDecoration:"none",
-    
-    }}>Заказать</Link></Button>
-    </Card.Footer>
-  </Card>
-  </CardDeck>
-</div>
-<div className="cards-five">
-  
-  <CardDeck>
-<Card style={{ width: '18rem',
-backgroundColor:"rgba(0,0,0,0.4)"
- }} >
-    <Card.Img variant="top" src={grader} style={{width:"100%"}} />
-    <Card.Body>
-      <Card.Title>Бульдозер</Card.Title>
-      <Card.Text >
-      ДТ-75
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-    <Button style={{
-    backgroundColor:"#90caf9"
-  }}><Link to="/contact/"  
-  style={{
-    textDecoration:"none",
-    color:""
-    }}>Заказать</Link></Button>
-    </Card.Footer>
-  </Card>
-  <Card style={{ width: '18rem',
-backgroundColor:"rgba(0,0,0,0.4)"
-}} >
-    <Card.Img variant="top" src={tral} style={{width:"100%"}} />
-    <Card.Body>
-      <Card.Title>Трал</Card.Title>
-      <Card.Text>
-      Грузоподъемность 10 тонн
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-    <Button style={{
     backgroundColor:"#90caf9"
   }}><Link to="/contact/"  
   style={{
@@ -340,8 +340,7 @@ backgroundColor:"rgba(0,0,0,0.4)"
     <Card.Img variant="top" src={call} style={{width:"100%"}} />
     <Card.Body>
       <Card.Title>Консультации</Card.Title>
-      <Card.Text>
-      Бесплатные консультации</Card.Text>
+      <Card.Text>Бесплатные консультации</Card.Text>
     </Card.Body>
     <Card.Footer>
     <Button style={{
