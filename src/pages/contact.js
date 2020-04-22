@@ -21,7 +21,9 @@ const Contact = (props) => (
     </div>
     <div className="contact-card">
     <ListGroup style={{
-      backgroundColor:"rgba(0,0,0,0.4)"
+      backgroundColor:"rgba(0,0,0,0.4)",
+      border:"3px solid grey",
+      borderRadius:"3px"
     }}>
   <ListGroup.Item style={{backgroundColor:"transparent"}}><p className="text"><a className="link-text" href="tel:+380992983816"><img className="tel" src={tel} alt="tel"/> +380992983816</a></p></ListGroup.Item>
   <ListGroup.Item style={{backgroundColor:"transparent"}}><p className="text"><a className="link-text" href="tel:+380974055785"><img className="tel" src={tel} alt="tel"/> +380974055785</a></p></ListGroup.Item>
