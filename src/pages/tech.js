@@ -17,11 +17,14 @@ import ford from "../images/ford.jpg"
 import dumper from "../images/dumper.jpg"
 import reno from "../images/reno.jpg"
 import trailer from "../images/trailer.jpg"
+import call from "../images/call.jpg"
+import grader from "../images/grader.jpg"
+import tral from "../images/tral.jpg"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/tech.scss"
 
 const Tech = (props) => (
-  <BackgroundImage className="backgroundTech"
+  <BackgroundImage className="backgroundTech" 
     fluid={props.data.techImage.childImageSharp.fluid}
     >
   <div className="container-tech">
@@ -274,6 +277,71 @@ backgroundColor:"rgba(0,0,0,0.4)"
       <Card.Text>
       Персонал с опытом
       </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+    <Button style={{
+    backgroundColor:"#90caf9",
+    textAlign:"center"
+  }}><Link to="/contact/"  
+  style={{
+    textDecoration:"none",
+    
+    }}>Заказать</Link></Button>
+    </Card.Footer>
+  </Card>
+  </CardDeck>
+</div>
+<div className="cards-five">
+  
+  <CardDeck>
+<Card style={{ width: '18rem',
+backgroundColor:"rgba(0,0,0,0.4)"
+ }} >
+    <Card.Img variant="top" src={grader} style={{width:"100%"}} />
+    <Card.Body>
+      <Card.Title>Бульдозер</Card.Title>
+      <Card.Text >
+      ДТ-75
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+    <Button style={{
+    backgroundColor:"#90caf9"
+  }}><Link to="/contact/"  
+  style={{
+    textDecoration:"none",
+    color:""
+    }}>Заказать</Link></Button>
+    </Card.Footer>
+  </Card>
+  <Card style={{ width: '18rem',
+backgroundColor:"rgba(0,0,0,0.4)"
+}} >
+    <Card.Img variant="top" src={tral} style={{width:"100%"}} />
+    <Card.Body>
+      <Card.Title>Трал</Card.Title>
+      <Card.Text>
+      Грузоподъемность 10 тонн
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+    <Button style={{
+    backgroundColor:"#90caf9"
+  }}><Link to="/contact/"  
+  style={{
+    textDecoration:"none",
+    color:""
+    }}>Заказать</Link></Button>
+    </Card.Footer>
+  </Card>
+  <Card style={{ width: '18rem',
+backgroundColor:"rgba(0,0,0,0.4)"
+}} >
+    <Card.Img variant="top" src={call} style={{width:"100%"}} />
+    <Card.Body>
+      <Card.Title>Консультации</Card.Title>
+      <Card.Text>
+      Бесплатные консультации</Card.Text>
     </Card.Body>
     <Card.Footer>
     <Button style={{
