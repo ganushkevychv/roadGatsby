@@ -340,7 +340,7 @@ backgroundColor:"rgba(0,0,0,0.4)"
     <Card.Img variant="top" src={call} style={{width:"100%"}} />
     <Card.Body>
       <Card.Title>Консультации</Card.Title>
-      <Card.Text>Бесплатные консультации</Card.Text>
+      <Card.Text>Консультации специалистов</Card.Text>
     </Card.Body>
     <Card.Footer>
     <Button style={{
