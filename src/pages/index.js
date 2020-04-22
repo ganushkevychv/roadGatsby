@@ -61,7 +61,7 @@ const IndexPage = (props) => (
               component="h1"
               style={{
                 fontSize: "2.6rem",
-                color: "black"
+                color: "white"
               }}
             >
               Елисаветдорбуд
