@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import SEO from "../components/seo"
 import { Button } from '@material-ui/core';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "../styles/contacts.scss"
+
 import tel from "../images/tel.png"
 import gmail from "../images/gmail.png"
 import ListGroup from 'react-bootstrap/ListGroup'

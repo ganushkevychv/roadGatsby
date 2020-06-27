@@ -6,7 +6,7 @@ import { graphql } from "gatsby"
 import SEO from "../components/seo"
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
-import "../styles/about.scss"
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const About = (props) => (

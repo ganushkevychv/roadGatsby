@@ -1,146 +1,32 @@
 import React from "react";
-import { Link } from "gatsby";
-import {
-  Button,
-  Card,
-  CardContent,
-  Typography,
-  Avatar
-} from "@material-ui/core";
-import ButtonGroup from "@material-ui/core/ButtonGroup";
-import "../styles/layout.scss";
 import SEO from "../components/seo";
 import BackgroundImage from "gatsby-background-image"
 import { graphql } from "gatsby"
-import Footer from "../components/footer"
-import logoRoller from "../images/logoRoller.png";
-
+import Layout from "../components/layout"
+import Gallery from "../components/gallery"
+import Maps from "../components/maps"
 const IndexPage = (props) => (
-  <BackgroundImage className="background"
-    fluid={props.data.indexImage.childImageSharp.fluid}
-    >
-  <div className="container">
-    <SEO title="Home page" />
-   
-    <div className="container-logo">
-      <Card
-        variant="outlined"
-        style={{
-          borderRightStyle: "none",
-          borderLeftStyle: "none",
-          backgroundColor: "transparent",
-         
-        }}
-      >
-        <Avatar 
-          style={{
-            width: "200px",
-            height: "200px"
-          }}
-          alt="builder"
-          src={logoRoller}
-        />
-      </Card>
+  <Layout>
+      <SEO title="Home" />
+
+      <div className="background-header">
+          <div className="text-overlay">
+    <h1 className="header-title">Елисаветдорбуд</h1>
+    <div className="header-slogan">
+    <p >Ремонт дорог – наше призвание!</p>
+    <p >Считается, что положить асфальт – элементарный процесс. Но чтобы сделать это правильно и качественно, нужно обратиться к нам. На счету нашего предприятия масса выполненных проектов, напрямую или косвенно связанных с дорожным покрытием.</p>
+    <p >Нам под силу решить самые амбициозные задачи и масштабные проекты.</p>
     </div>
-    <div className="container-card">
-      <Card
-        variant="outlined"
-        style={{
-          backgroundColor: "transparent",
-          border: "3px solid grey",
-          borderRightStyle: "none",
-          borderLeftStyle: "none"
-        }}
-      >
-        <CardContent>
-          <div className="company-h1">
-            <Typography
-              color="textPrimary"
-              variant="h1"
-              gutterBottom
-              component="h1"
-              style={{
-                fontSize: "2.6rem",
-                color: "white"
-              }}
-            >
-              Елисаветдорбуд
-            </Typography>
-          </div>
-          <Typography
-            variant="h5"
-            component="h2"
-            style={{
-              color: "white"
-            }}
-          >
-            Ремонт дорог – наше призвание!
-          </Typography>
-        </CardContent>
-      </Card>
     </div>
-    <div className="container-button">
-      <ButtonGroup
-        color="primary"
-        aria-label="outlined primary button group"
-        style={{
-          padding: "10px"
-        }}
-      >
-        <Button
-          style={{
-            border: "3px solid grey",
-            backgroundColor:"rgba(0,0,0,0.4)"
-          }}
-        >
-          <Link
-            to="/about/"
-            style={{
-              textDecoration: "none",
-              color: "white"
-            }}
-          >
-            О нас
-          </Link>
-        </Button>
-        <Button
-          style={{
-            border: "3px solid grey",
-            backgroundColor:"rgba(0,0,0,0.4)"
-          }}
-        >
-          <Link
-            to="/tech/"
-            style={{
-              textDecoration: "none",
-              color: "white"
-            }}
-          >
-            Техника
-          </Link>
-        </Button>
-        <Button
-          style={{
-            border: "3px solid grey",
-              backgroundColor:"rgba(0,0,0,0.4)"
-          }}
-        >
-          <Link
-            to="/contact/"
-            style={{
-              textDecoration: "none",
-              color: "white"
-            }}
-          >
-            Контакты
-          </Link>
-        </Button>
-      </ButtonGroup>
+    
     </div>
-  </div>
-  <Footer/>
-  </BackgroundImage>
-);
+    <h2 className="tech-title">Техника и ресурсы</h2>
+    <Gallery/>
+    <h2 className="tech-title">География</h2>
+<Maps/>
+  </Layout>
+)
+
 
 export default IndexPage;
 

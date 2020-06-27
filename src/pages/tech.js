@@ -21,7 +21,7 @@ import call from "../images/call.jpg"
 import grader from "../images/grader.jpg"
 import tral from "../images/tral.jpg"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "../styles/tech.scss"
+
 
 const Tech = (props) => (
   <BackgroundImage className="backgroundTech" 
