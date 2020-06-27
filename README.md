@@ -1,11 +1,12 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<a href="https://elisavetdorbud.netlify.app/">
 <h1 align="center">
+<a href="https://elisavetdorbud.netlify.app/">
   Elisavetdorbud
-</h1>
 </a>
+</h1>
+
 <h2 align="center">
-Commercial Project
+Commercial Project V1
 </h2>
 <ul>
 Methodologies used in this Project:
